@@ -1,0 +1,28 @@
+import { ProjectsSection } from "@/components/projects-section"
+
+export default function Page() {
+  return (
+    <div className="dark min-h-screen bg-background text-foreground">
+      <main className="flex min-h-screen flex-col">
+        <section className="mx-auto flex w-full max-w-5xl flex-1 flex-col items-start justify-center px-6 py-24">
+          <p className="text-sm font-medium text-muted-foreground">Welcome</p>
+          <h1 className="mt-3 text-balance text-4xl font-semibold tracking-tight sm:text-6xl">
+            Building thoughtful software, one project at a time.
+          </h1>
+          <p className="mt-5 max-w-2xl text-pretty text-lg text-muted-foreground">
+            Designer and engineer focused on crafting fast, accessible, and beautiful digital
+            experiences.
+          </p>
+          <a
+            href="#projects"
+            className="mt-8 inline-flex items-center rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+          >
+            View projects
+          </a>
+        </section>
+
+        <ProjectsSection />
+      </main>
+    </div>
+  )
+}
