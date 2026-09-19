@@ -21,6 +21,20 @@ export default function Page() {
           </a>
         </section>
 
+        <section className="mx-auto w-full max-w-5xl px-6 py-16">
+          <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">About Me</h2>
+          <div className="mt-5 max-w-2xl space-y-3 text-pretty text-lg text-muted-foreground">
+            <p>
+              I hold a Master of Computer Applications (MCA) degree, where I built a strong
+              foundation in software engineering and problem-solving.
+            </p>
+            <p>
+              I&apos;m passionate about web development, and I love turning ideas into fast,
+              accessible, and beautiful experiences on the web.
+            </p>
+          </div>
+        </section>
+
         <ProjectsSection />
       </main>
     </div>
