@@ -35,6 +35,20 @@ export default function Page() {
           </div>
         </section>
 
+        <section className="mx-auto w-full max-w-5xl px-6 py-16">
+          <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">Skills</h2>
+          <ul className="mt-5 flex flex-wrap items-center gap-3">
+            {["HTML", "CSS", "JavaScript", "React", "AI Tools"].map((skill) => (
+              <li
+                key={skill}
+                className="inline-flex items-center rounded-full border border-border bg-secondary px-4 py-1.5 text-sm font-medium text-secondary-foreground"
+              >
+                {skill}
+              </li>
+            ))}
+          </ul>
+        </section>
+
         <ProjectsSection />
       </main>
     </div>
